@@ -3,14 +3,14 @@ import './App.css';
 import { ArcherContainer, ArcherElement } from 'react-archer';
 import {RIPES} from './data/Ripe'
 
-const boxStyle = { padding: '10px', border: '1px solid black', borderRadius:50, width:'200px', backgroundColor:'#D3D3D3' };
-const rootStyle = { display: 'flex', justifyContent: 'center'  };
+const boxStyle = { padding: '10px', border: '1px solid black', borderRadius:50, width:'200px', backgroundColor:'#C0C0C0' };
+const rootStyle = { display: 'flex', justifyContent: 'center', marginTop:10 };
 const rowStyle = { marginTop:50, display: 'flex', justifyContent: 'space-between' }
 
 
 const Fetch = (props) =>{
   return(
-    <ArcherContainer>
+          <ArcherContainer>
     {props.pings.map((ping,index )=>{
       console.log(index)
         return(
@@ -40,6 +40,7 @@ const Fetch = (props) =>{
     })}
     
   </ArcherContainer>
+
   )
 }
 
